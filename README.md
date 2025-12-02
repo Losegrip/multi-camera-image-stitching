@@ -100,3 +100,23 @@ python main.py ./image/city --cyl
   </tr>
 </table>
 
+## Seam-aware blending vs simple feathering
+
+在主流程中，脚本会同时导出两张结果图：
+
+`results/pano_feather.jpg` —— 简单融合（feather blending）
+`results/pano_seam.jpg` —— 接缝优化融合（seam-aware blending）
+<table>
+  <tr>
+    <th>平面投影（planar）</th>
+    <th>柱面投影（cylindrical）</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="docs/1.jpg" width="420">
+    </td>
+    <td align="center">
+      <img src="docs/2.jpg" width="420">
+    </td>
+  </tr>
+</table>
