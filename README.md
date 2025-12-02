@@ -53,9 +53,10 @@ for real-time multi-camera video stitching.
 └── requirements.txt     # 依赖列表
 ```
 ## Installation
-
+Tested with Python 3.11 (conda environment "stitch").
+Python 3.10+ should work as well.
 ```bash
-conda create -n test python=3.11
+conda create -n test python=3.10
 conda activate test
 
 pip install -r requirements.txt
