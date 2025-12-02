@@ -108,8 +108,8 @@ python main.py ./image/city --cyl
 `results/pano_seam.jpg` —— 接缝优化融合（seam-aware blending）
 <table>
   <tr>
-    <th>平面投影（planar）</th>
-    <th>柱面投影（cylindrical）</th>
+    <th>简单融合（planar）</th>
+    <th>接缝优化融合（cylindrical）</th>
   </tr>
   <tr>
     <td align="center">
