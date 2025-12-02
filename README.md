@@ -100,6 +100,7 @@ python main.py ./image/city --cyl
   </tr>
 </table>
 
+
 ## Illumination compensation
 
 在常见工程里，光照补偿通常只使用一个 **全局比例系数**，对所有像素统一缩放。这种方法实现简单、开销很小，但在存在暗角、局部阴影或自动曝光的多相机场景下，亮度差异往往是空间变化的，全局比例难以同时兼顾整幅图像。
@@ -111,6 +112,7 @@ python main.py ./image/city --cyl
 - 复杂度仍然接近全局比例法，但能明显减弱多相机间的“亮度板块感”，为接缝优化创造更平坦的亮度环境。
 
 主流程 `main.py` 默认启用该网格补偿，`test.py` 中可对比 global ratio 与 grid-based 两种策略的效果差异。
+
 
 ## Seam-aware blending vs simple feathering
 
