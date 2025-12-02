@@ -87,5 +87,5 @@ python main.py ./image/city --cyl
 
 | 平面投影（planar） | 柱面投影（cylindrical） |
 | ------------------ | ------------------------ |
-| ![](docs/pano_seam.jpg) | ![](docs/pano_seam_cyl.jpg) |
+| ![](docs/city_seam.jpg) | ![](docs/city_seam_cyl.jpg) |
 
