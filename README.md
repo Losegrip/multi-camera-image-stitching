@@ -32,11 +32,22 @@ for real-time multi-camera video stitching.
 ```text
 .
 ├── main.py              # 主示例：多路图像 + 柱面投影 + 接缝融合 + 网格光照
-├── test.py              # 调试脚本：几何 + 光照补偿对比（none / global / grid）
-├── features/            # SIFT 特征检测、匹配、配置类型等
+├── test.py              # 调试脚本：几何 + 光照补偿对比
+├── features/            # SIFT 特征、匹配、配置类型等
+│   ├── detector.py
+│   ├── matcher.py
+│   └── types.py
 ├── geometry/            # 柱面投影、单应估计、世界画布、warp 等几何模块
-├── rendering/           # 简单融合、接缝融合等渲染模块
-├── views/               # 视图封装 / 相机视角相关代码
-├── image/               # 示例图片
+│   ├── canvas.py
+│   ├── cylindrical.py
+│   ├── homography.py
+│   └── warp.py
+├── rendering/           # 简单融合、接缝融合、后处理
+│   ├── illumination.py
+│   ├── postprocess.py
+│   └── seam_blending.py
+├── views/               # 视图封装 / 相机视角相关类型
+│   ├── init_views.py
+│   └── types.py
+├── image/               # 示例图片（city/weir 等测试数据）
 └── requirements.txt     # 依赖列表
-```
