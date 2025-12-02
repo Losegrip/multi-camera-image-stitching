@@ -149,10 +149,10 @@ python main.py ./image/city --cyl
       <img src="docs/mask.jpg" width="260">
     </td>
     <td align="center">
-      <img src="docs/pano_0.jpg" width="420">
+      <img src="docs/3.jpg" width="420">
     </td>
     <td align="center">
-      <img src="docs/pano_1.jpg" width="420">
+      <img src="docs/4.jpg" width="420">
     </td>
   </tr>
 </table>
