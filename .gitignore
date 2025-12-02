@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual env / Conda
+.env/
+.venv/
+venv/
+env/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project outputs
+results/
+debug_*/
+logs/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
