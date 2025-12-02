@@ -51,3 +51,12 @@ for real-time multi-camera video stitching.
 │   └── types.py
 ├── image/               # 示例图片（city/weir 等测试数据）
 └── requirements.txt     # 依赖列表
+```
+## Installation
+
+```bash
+conda create -n test python=3.11
+conda activate test
+
+pip install -r requirements.txt
+
