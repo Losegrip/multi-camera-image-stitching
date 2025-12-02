@@ -64,6 +64,15 @@ conda activate test
 
 # 安装依赖
 pip install -r requirements.txt
+```
+## Quick start
 
+### 1. 多路图像拼接（主流程）
 
-
+```bash
+python main.py ./image/city
+```
+输入：./image/city 目录下的多张图片
+输出：results/ 目录：
+pano_feather.jpg — 羽化融合结果
+pano_seam.jpg — 接缝线优化融合结果
