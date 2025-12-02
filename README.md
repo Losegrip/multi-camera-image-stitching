@@ -53,27 +53,17 @@ for real-time multi-camera video stitching.
 └── requirements.txt     # 依赖列表
 ```
 ## Installation
-Tested with Python 3.11 (conda environment "stitch").
+
+Tested with Python 3.11 (conda environment "stitch").  
 Python 3.10+ should work as well.
+
 ```bash
-conda create -n test python=3.10
-
-Quick start
-1. 多路图像拼接（主流程）
-python main.py ./image/city --cyl
-
-
-输入：./image/city 目录下的多张图片
-
-输出：results/ 目录：
-
-pano_feather.jpg — 羽化融合结果
-
-pano_seam.jpg — 接缝线优化融合结果
-
-2. 光照补偿对比
-python test.py ./image/weir
+# 创建独立环境（示例）
+conda create -n test python=3.11
 conda activate test
 
+# 安装依赖
 pip install -r requirements.txt
+
+
 
