@@ -81,3 +81,11 @@ python main.py ./image/city
 ```bash
 python main.py ./image/city --cyl
 ```
+## Cylindrical vs planar projection
+
+使用同一组 city 场景，对比平面投影与柱面投影下的接缝优化拼接结果：
+
+| 平面投影（planar） | 柱面投影（cylindrical） |
+| ------------------ | ------------------------ |
+| ![](docs/pano_seam_cyl.jpg) | ![](docs/pano_seam_cyl.jpg) |
+
