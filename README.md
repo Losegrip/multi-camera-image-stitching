@@ -72,7 +72,7 @@ pip install -r requirements.txt
 ```bash
 python main.py ./image/city
 ```
-输入：./image/city 目录下的多张图片
-输出：results/ 目录：
-pano_feather.jpg — 羽化融合结果
-pano_seam.jpg — 接缝线优化融合结果
+**输入**：./image/city 目录下的多张图片
+**输出**：results/ 目录：
+`pano_feather.jpg` — 羽化融合结果
+`pano_seam.jpg` — 接缝线优化融合结果
