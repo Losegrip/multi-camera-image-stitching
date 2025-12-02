@@ -92,10 +92,10 @@ python main.py ./image/city --cyl
   </tr>
   <tr>
     <td align="center">
-      <img src="docs/city_planar.jpg" width="420">
+      <img src="docs/city_seam.jpg" width="420">
     </td>
     <td align="center">
-      <img src="docs/city_cylindrical.jpg" width="420">
+      <img src="docs/city_seam_cyl.jpg" width="420">
     </td>
   </tr>
 </table>
