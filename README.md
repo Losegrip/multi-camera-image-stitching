@@ -85,7 +85,18 @@ python main.py ./image/city --cyl
 
 使用同一组 city 场景，对比平面投影与柱面投影下的接缝优化拼接结果：
 
-| 平面投影（planar） | 柱面投影（cylindrical） |
-| ------------------ | ------------------------ |
-| ![](docs/city_seam.jpg) | ![](docs/city_seam_cyl.jpg) |
+<table>
+  <tr>
+    <th>平面投影（planar）</th>
+    <th>柱面投影（cylindrical）</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="docs/city_planar.jpg" width="420">
+    </td>
+    <td align="center">
+      <img src="docs/city_cylindrical.jpg" width="420">
+    </td>
+  </tr>
+</table>
 
