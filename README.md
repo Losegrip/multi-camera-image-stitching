@@ -146,13 +146,13 @@ python main.py ./image/city --cyl
   </tr>
   <tr>
     <td align="center">
-      <img src="docs/mask.jpg" width="320">
+      <img src="docs/mask.jpg" width="260">
     </td>
     <td align="center">
-      <img src="docs/pano_0.jpg" width="320">
+      <img src="docs/pano_0.jpg" width="420">
     </td>
     <td align="center">
-      <img src="docs/pano_1.jpg" width="320">
+      <img src="docs/pano_1.jpg" width="420">
     </td>
   </tr>
 </table>
