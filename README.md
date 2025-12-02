@@ -164,3 +164,39 @@ python main.py ./image/city --cyl
 在实现上，`seam_blending` 支持额外传入 `seam_mask` 通道，用于约束接缝的搜索空间。  
 静态图像中，mask 由离线算法（如 SAM）生成即可；在视频场景下，可以在首帧生成并固化 mask 和接缝线，后续帧复用，同步兼顾画质和实时性。这里仅说明接口能力，不对具体分割模型做展开。
 
+## Conclusion & future work
+
+This repository provides a modular multi-camera image stitching pipeline with:
+
+- 世界画布（panorama canvas）计算与多路配准；
+- 可选柱面投影（cylindrical projection），适合大视场角场景；
+- 接缝线优化融合（seam-aware blending），支持接缝掩膜通道；
+- 网格 surface 光照补偿，提升多路摄像机之间亮度一致性。
+
+工程已经在静态图片上完成验证，并通过接口设计预留了向实时视频拼接扩展的空间。  
+后续可以考虑的方向包括：
+
+- 将几何 / 光照 / 融合模块接入视频流，完成 **multi-camera video stitching demo**；
+- 在 GPU 上重写特征提取和 warp 等瓶颈模块，提升实时性能；
+- 引入更鲁棒的特征与匹配（如 SuperPoint / R2D2 等），增强在弱纹理场景下的稳定性；
+- 结合在线分割模型，自动生成前景掩膜，提升 seam mask 的自动化程度。
+
+如果你在此基础上做了改进或扩展，欢迎提 issue 或发 PR 一起讨论。
+
+---
+
+## References
+
+- Lu Yang, Zhenglun Kong, Ting Li, Xinyi Bai, Zhiye Lin, Hong Cheng.  
+  *GPU Accelerated Color Correction and Frame Warping for Real-time Video Stitching*.
+
+- Shuo-Han Yeh, Shang-Hong Lai.  
+  *Real-time Video Stitching*.
+
+- Yuan Jia, Zhongyao Li, Lei Zhang, Bin Song, Rui Song.  
+  *Semantic Aware Stitching for Panorama*.
+
+- 闵海波.  
+  《多路视频实时拼接技术研究》.
+
+
